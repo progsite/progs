@@ -1,0 +1,97 @@
+
+
+<html>
+<head>
+<title>Prog's Web</title>
+</head>
+<body>
+<style>
+body{
+font-family: sans-serif;
+}
+.header{
+color: rgb(82, 225, 237);
+}
+.by{
+font-size: 90px;
+color: red;
+}
+.start{
+font-size: 20px;
+}
+.box{
+width: 200px;
+height: 30px;
+border-color: red;
+text-align: center;
+}
+.sub{
+cursor: pointer;
+font-weight: bold;
+}
+.number{
+font-size: 90px;
+cursor: default;
+}
+.save{
+cursor: default;
+}
+.note{
+color: red;
+}
+</style>
+<script>
+function question(){
+let namer = document.getElementById('name').value
+
+alert('Hello ' + namer)
+
+let ask = prompt(namer  + ' Did you enter the website With the Verification Code?')
+
+if(ask == "yes"){
+alert('Ok There is not Problem! Now you Can Do your Work!😊')
+}else if(ask == "no"){
+alert("ok We think That You've Entered a non-secured Website. you entered a Third Party Website a duplicate website To enter Real Website Type a valid Website address! for more click learn more button can be seen in this website")
+}else if(ask == "Yes"){
+alert('Ok There is not Problem! Now you Can Do your Work!😊')
+}else if(ask == "No"){
+alert("ok We think That You've Entered a non-secured Website. you entered a Third Party Website a duplicate website To enter Real Website Type a valid Website address! for more click learn more button can be seen in this website")
+}else if(ask == ""){
+alert(namer + ' You Have to type Yes or No')
+}else if(namer == null){
+alert(namer + ' Why Did you Clicked Cancel Button?')
+}else{
+alert('We didnt Meant you to Type ' + ask +  ' Type only YES OR NO')
+}
+}
+</script>
+<br>
+<h1 class='header'>Welcome to Prog's Web</h1>
+<center>
+<h1 class='by'>Prog By Dyakot</h1>
+</center>
+<b class='start'>Hi, there How are you we will gonna make a free website for you For that thing you have to just do some steps that are given below 👇</b>
+<br>
+<br>
+<br>
+<input type='text' placeholder='Please Type Your Name!!' class='box' id='name'>    <input type='submit' class='sub' onclick='question()' value='Submit'>
+<br>
+<br>
+<br>
+<br>
+<center>
+<h1 class='number'>Contact: 8451913969</h1>
+</center>
+<center>
+<h1 class='save'>Send Whatsapp message to this number</h1>
+</center>
+<center>
+<h1 class='number'>Email: dyakotyt25@gmail.com</h1>
+</center>
+<center>
+<h1 class='save'>Send Email to this Email Id</h1>
+</center>
+<br>
+<p class='note'>Note: For more <a href='agree.html'>Learn more</a></p>
+</body>
+</html>
